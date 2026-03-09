@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UX/UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <strong>Rox</strong>
+            <div class="dot">.</div>
+            </div>
+        <nav>
+            <ul>
+                <li><a data-key="nav-home" href="#home">Accueil</a></li>
+                <li><a data-key="nav-projects" href="#projects">Projets</a></li>
+                <li><a data-key="nav-about" href="a-propos.html">À propos</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/photo.png" alt="Roxane OMNES" id="heroPhoto">
+            </div>
+            <div class="hero-content">
+                <img src="images/title.png" alt="Portfolio" class="hero-title-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="title" data-key="nav-skills">MES COMPÉTENCES</h2>
+        <div class="skills-grid" id="skills-container"></div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="title" data-key="nav-projects">MES PROJETS</h2>
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterProjects('all', this)" data-key="filter-all">Tout</button>
+            <button class="filter-btn" onclick="filterProjects('UX', this)" data-key="filter-ux">UX Design</button>
+            <button class="filter-btn" onclick="filterProjects('UI', this)" data-key="filter-ui">UI Design</button>
+            <button class="filter-btn" onclick="filterProjects('UX/UI', this)" data-key="filter-uxui">UX/UI Design</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3 data-key="footer-desc-title">Étudiante en BUT MMI</h3>
+                <p data-key="footer-desc-text">Parcours stratégie de communication numérique et design d'expérience</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/artheia._/"><img src="icons/icon_instagram.svg" alt="Instagram"
+                            class="social-btn"></a>
+                    <a href="https://www.linkedin.com/in/roxane-omnes/"><img src="icons/icon_linkedin.svg" alt="LinkedIn"
+                            class="social-btn"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Navigation</h4>
+                <div class="footer-link-group">
+                    <a href="#home"><img src="icons/icon_accueil.svg" class="footer-icon"> <span
+                            data-key="nav-home">Accueil</span></a>
+                    <a href="a-propos.html"><img src="icons/icon_a-propos.svg" class="footer-icon"> <span data-key="nav-about">À
+                            propos</span></a>
+                    <a href="#projects"><img src="icons/icon_projets.svg" class="footer-icon"> <span
+                            data-key="nav-projects">Projets</span></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Ressources</h4>
+                <div class="footer-link-group">
+                    <a href="#"><img src="icons/icon_cv.svg" class="footer-icon"> Mon CV</a>
+                    <a href="https://iut-lannion.univ-rennes.fr/"><img src="icons/icon_iut.svg" class="footer-icon"> IUT
+                        Lannion</a>
+                    <a
+                        href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-metiers-du-multimedia-et-de-l-internet-parcours-strategie-de-communication-numerique-et-design-d-experience"><img
+                            src="icons/icon_mmi.svg" class="footer-icon"> Formation MMI</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Contact</h4>
+                <div class="footer-link-group">
+                    <p><img src="icons/icon_mail.svg" class="footer-icon"> royomnes@gmail.com</p>
+                    <p><img src="icons/icon_location.svg" class="footer-icon"> Lannion, France</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 | Roxane OMNES</p>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

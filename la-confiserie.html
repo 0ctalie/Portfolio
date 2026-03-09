@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Confiserie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-projets.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="retour">
+            <a href="index.html"><img src="arrow-left.svg" alt="Retour"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a data-key="nav-home" href="index.html">Accueil</a></li>
+                <li><a data-key="nav-projects" href="index.html#projects">Projets</a></li>
+                <li><a data-key="nav-about" href="a-propos.html">À propos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projets-hero">
+            <div class="projets-cover">
+                <img src="images/cf-cover.png" alt="Pêche à pied Cover">
+            </div>
+        </section>
+
+        <div class="projet-details">
+            <div class="detail">Juin 2025</div>
+            <div class="detail">Projet universitaire</div>
+            <div class="detail">UX/UI Design</div>
+        </div>
+
+        <section class="container">
+            <div class="context-grid">
+                <div class="texte-contexte">
+                    <h2 class="title">CONTEXTE</h2>
+                    <p><strong>La Confiserie</strong> est une entreprise fictive qui souhaite moderniser son réseau de
+                        boutiques en
+                        mettant en place un site internet.
+                        <br>
+                        L’entreprise souhaite que le client puisse visualiser les informations sur les boutiques
+                        (stocks, horaires, catalogue), et que le gérant puisse modifier les stocks et confiseries de sa
+                        boutique.
+                        <br>
+                        Tout a été développé <strong>from scratch</strong> avec HTML, CSS, PHP et JS.
+                    </p>
+                    <p class="binome">Ce projet a été réalisé en binôme avec <a
+                            href="https://https://www.linkedin.com/in/alban-desbordes/" target="_blank">Alban
+                            DESBORDES</a>.
+                    </p>
+                    <h2 class="title">OUTILS UTILISÉS</h2>
+                    <div class="tools-flex">
+                        <div class="skill-card">
+                            <img src="icons/icon_figma.svg" alt="Figma" class="skill-icon">
+                            <h3>Figma</h3>
+                            <p>Visuels, wireframes, mockups</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="icons/icon_vscode.svg" alt="VS Code" class="skill-icon">
+                            <h3>VS Code</h3>
+                            <p>HTML, CSS, PHP, JS</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="icons/icon_github.svg" alt="GitHub" class="skill-icon">
+                            <h3>GitHub</h3>
+                            <p>Versioning, collaboration</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="contexte-mockup">
+                    <img src="images/c-mockup.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <section class="etapes">
+                <h2 class="title">étapes</h2>
+                <div class="step-item">
+                    <span class="step-badge">1</span>
+                    <h3>Planification et Exploration : <strong>Planche</strong> univers</h3>
+                    <section class="section-image-texte-container">
+                        <div class="image-part">
+                            <img src="images/cf-univers.png" alt="Planche univers">
+                        </div>
+                        <div class="card-project-description">
+                            <div class="text-part">
+                                <p class="text-part-paragraph">
+                                    La première étape a consisté à lire le <strong>brief</strong> du client pour
+                                    connaître son histoire
+                                    et ses valeurs, afin de créer un site représentatif de la marque.
+                                    <br><br>
+                                    Ainsi, nous avons élaboré une planche univers : un côté orientaté
+                                    <strong>luxe</strong> mettant en
+                                    avant la tradition familiale, une <strong>thématique</strong> autour du sud ancrée
+                                    dans les origines
+                                    de la marque, et un thème <strong>vintage</strong> pour l’ancienneté de la
+                                    Confiserie.
+                                    <br><br>
+                                    C'est finalement l'univers <strong>luxe</strong> mélangé au <strong>sud</strong> qui
+                                    a été retenu pour son
+                                    aspect sobre et chaleureux.
+
+                                    Ce choix se traduit en une interface aux <strong>contrastes marqués</strong> avec
+                                    des visuels aux
+                                    tons chauds et des photos bien travaillées.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="step-item">
+                    <span class="step-badge">2</span>
+                    <h3>Idéation : <strong>Architecture</strong> du site</h3>
+                    <section class="section-image-texte-container vertical-layout">
+                        <div class="image-part-double">
+                            <div class="img-wrapper">
+                                <img src="images/cf-wireframe-1.png" alt="Wireframe">
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="images/cf-wireframe-2.png" alt="Wireframe">
+                            </div>
+                        </div>
+
+                        <div class="card-project-description">
+                            <div class="text-part">
+                                <p class="text-part-paragraph">
+                                    Une fois le thème choisi, nous avons conçu l’architecture du site avec un côté
+                                    <strong>client</strong> et un côté <strong>gérant</strong> : page d’accueil,
+                                    page de catalogue et page détail
+                                    produit, page d’ajout/suppression.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="step-item">
+                    <span class="step-badge">3</span>
+                    <h3>Génération : <strong>Conception</strong> de l'interface</h3>
+                    <section class="section-image-texte-container vertical-layout">
+                        <div class="image-part-double">
+                            <div class="img-wrapper">
+                                <img src="images/cf-interface-1.png" alt="Interface">
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="images/cf-interface-2.png" alt="Interface">
+                            </div>
+                        </div>
+
+                        <div class="card-project-description">
+                            <div class="text-part">
+                                <p class="text-part-paragraph">
+                                    Enfin, nous avons transformé les maquettes en un <strong>site
+                                        fonctionnel</strong> développé from
+                                    scratch. Nous avons utilisé du HTML, CSS, PHP et JS pour faire le site.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="conclusion">
+                <h2 class="title">CE QUE JE RETIENS</h2>
+                <p>Le site Confiserie m’a appris a <strong>travailler en binôme</strong> sur la création d’un site internet.
+                    <br>
+                    En effet, jai appris a utilisé <strong>GitHub</strong> en simultané, à répartir les tâches dans les
+                    étapes de
+                    développement et à communiquer avec mon binôme pour le bon déroulé du site web.
+                    <br>
+                    Si je devais refaire le site, je referai l’interface et les couleurs car avec le temps, je n’aime
+                    plus l’identité visuelle.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3 data-key="footer-desc-title">Étudiante en BUT MMI</h3>
+                <p data-key="footer-desc-text">Parcours stratégie de communication numérique et design d'expérience</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/artheia._/"><img src="icons/icon_instagram.svg" alt="Instagram"
+                            class="social-btn"></a>
+                    <a href="https://www.linkedin.com/in/roxane-omnes/"><img src="icons/icon_linkedin.svg" alt="LinkedIn"
+                            class="social-btn"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Navigation</h4>
+                <div class="footer-link-group">
+                    <a href="#home"><img src="icons/icon_accueil.svg" class="footer-icon"> <span
+                            data-key="nav-home">Accueil</span></a>
+                    <a href="a-propos.html"><img src="icons/icon_a-propos.svg" class="footer-icon"> <span data-key="nav-about">À
+                            propos</span></a>
+                    <a href="#projects"><img src="icons/icon_projets.svg" class="footer-icon"> <span
+                            data-key="nav-projects">Projets</span></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Ressources</h4>
+                <div class="footer-link-group">
+                    <a href="#"><img src="icons/icon_cv.svg" class="footer-icon"> Mon CV</a>
+                    <a href="https://iut-lannion.univ-rennes.fr/"><img src="icons/icon_iut.svg" class="footer-icon"> IUT
+                        Lannion</a>
+                    <a
+                        href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-metiers-du-multimedia-et-de-l-internet-parcours-strategie-de-communication-numerique-et-design-d-experience"><img
+                            src="icons/icon_mmi.svg" class="footer-icon"> Formation MMI</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-label">Contact</h4>
+                <div class="footer-link-group">
+                    <p><img src="icons/icon_mail.svg" class="footer-icon"> royomnes@gmail.com</p>
+                    <p><img src="icons/icon_location.svg" class="footer-icon"> Lannion, France</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 | Roxane OMNES</p>
+        </div>
+    </footer>
+</body>
+
+</html>

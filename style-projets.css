@@ -1,0 +1,282 @@
+.projets-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.projets-cover img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.context-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    ;
+}
+
+.contexte-mockup {
+    display: flex;
+    justify-content: right;
+}
+
+/* Hide mockup image on smaller viewports to avoid layout issues */
+@media (max-width: 1024px) {
+    .contexte-mockup img { display: none !important; }
+}
+
+.tools-flex {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.tool-icon img {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tool-item img {
+    width: 45px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.step-item {
+    margin-bottom: 30px;
+}
+
+.step-badge {
+    background: var(--primary);
+    color: white;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+.step-item h3 {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+
+.full-width-img-container {
+    width: 1000px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.full-width-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .full-width-img-container {
+        width: 820px; /* reduced size for large viewports */
+        max-width: 820px;
+        margin-top: 20px;
+    }
+}
+
+.deploiment {
+    margin-bottom: 20px;
+}
+
+.deploiment-list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.deploiment-list-grid ul {
+    list-style: none;
+}
+
+.deploiment-list-grid li::before {
+    content: "•";
+    color: var(--primary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.galerie-container-tiny {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.galerie-container-tiny img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Make gallery images responsive and limit overall gallery width on large viewports */
+.galerie-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.galerie-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* Card projet description */
+.section-image-texte-container {
+    display: flex; 
+    align-items: stretch; 
+    border: 1px solid rgba(0, 0, 0, 0.08); 
+    border-radius: 6px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07); 
+    overflow: hidden; 
+    flex-direction: row;
+    max-width: 1000px;;
+}
+
+/* Partie gauche */
+.image-part {
+    flex: 1; 
+    min-width: 40%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+}
+
+.image-part img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Partie droite  */
+.text-part {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.text-part-title {
+    font-size: 1.8rem;
+    color: var(--text-dark); 
+    margin-bottom: 10px;
+}
+
+.text-part-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-main); 
+    margin-bottom: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .section-image-texte-container {
+        flex-direction: column; 
+        margin: 40px 5%; 
+    }
+
+    .image-part {
+        min-width: 100%; 
+        height: 250px; 
+    }
+
+    .text-part {
+        padding: 30px 25px; 
+    }
+
+    .text-part-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+.title-project{
+    display: flex;
+    flex-direction : row;
+}
+
+.card-project-description {
+   padding: 30px;
+   align-items: flex-start;
+}
+
+h3 a{
+    color: var(--text-dark);
+    text-decoration: none;
+   
+}
+/* Card projet 2  */
+.vertical-layout {
+    flex-direction: column !important;
+    margin-bottom: 30px;
+}
+
+.image-part-double {
+    display: flex;
+    width: 100%;
+    height : 100%;
+    gap: 10px;
+    padding: 15px;
+}
+
+.img-wrapper {
+    flex: 1;
+    width : 100%;
+    height: 100%; 
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.vertical-layout .card-project-description {
+    padding-top: 10px;
+}
+
+
+.projet-details{
+	display:flex;
+	gap:12px;
+	justify-content:center;
+	margin-top:25px;
+	flex-wrap:wrap;
+}
+.detail{
+	border:1px solid rgba(121,119,119,0.1);
+	padding:6px 18px;
+	border-radius:999px;
+	color: var(--primary);
+	font-weight:600;
+	font-size:0.92rem;
+}
+@media (max-width:720px){
+	.projet-details{justify-content:flex-start}
+	.detail{padding:6px 12px;font-size:0.88rem}
+	.badge-item{width:100%}
+	.step-badges{gap:10px}
+}
