@@ -6,7 +6,6 @@
     max-width: 1200px;
 }
 
-
 .sidebar {
     flex: 1;
 }
@@ -186,9 +185,7 @@ h1 {
 
 /* --- RESPONSIVE À PROPOS (390px) --- */
 @media (max-width: 390px) {
-
     .title h2 {
-
         font-size: 1rem;
         font-weight: 800;
         position: relative;
@@ -196,93 +193,75 @@ h1 {
         margin-bottom: 50px;
         text-transform: uppercase;
     }
+
+    /* 2. Sidebar et Titres */
+    .sidebar {
+        width: 100%;
+        display: none; /* Already hidden in 768px, but keeping for consistency */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    /* 3. Boîtes d'informations */
+    .info-boxes {
+        gap: 10px;
+    }
+
+    .box {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .box-header span {
+        font-size: 0.8rem;
+    }
+
+    .icon {
+        width: 20px;
+    }
+
+    /* 4. Section Contenu (Texte de présentation) */
+    .container {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 3. On force l'affichage en colonne pour la galerie */
+    .projects-gallery-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery-image-container {
+        aspect-ratio: 1 / 1;
+        margin-bottom: 8px;
+    }
+
+    .gallery-item .year-badge,
+    .gallery-description {
+        display: none;
+    }
+
+    .title-presentation {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
-/* 2. Sidebar et Titres */
-.sidebar {
-    width: 100%;
-}
 
-h1 {
-    font-size: 1.8rem;
-    /* Réduction du nom "Roxane OMNES" */
-    line-height: 1.1;
-}
-
-.job-title {
-    font-size: 1.1rem;
-    /* Réduction du titre du poste */
-    margin-bottom: 20px;
-}
-
-/* 3. Boîtes d'informations (Email, Localisation, etc.) */
-.info-boxes {
-    gap: 10px;
-}
-
-.box {
-    padding: 10px 15px;
-    /* Moins de rembourrage interne */
-    font-size: 0.85rem;
-    /* Police plus petite pour que l'email tienne */
-}
-
-.box-header span {
-    font-size: 0.8rem;
-    /* Titres à l'intérieur des boîtes */
-}
-
-.icon {
-    width: 20px;
-    /* Icônes plus petites */
-}
-
-/* 4. Section Contenu (Texte de présentation) */
-.container {
-    margin: 20px 10px;
-    display: block;
-    /* On repasse en block car plus besoin de flex sans sidebar */
-}
-
-/* 3. On force l'affichage 2 par 2 pour la galerie */
-.projects-gallery-grid {
-    display: flex;
-    flex-direction: column;
-}
-
-/* 4. Ajustement du contenu des projets pour le format miniature */
-.gallery-image-container {
-    aspect-ratio: 1 / 1;
-    /* Format carré pour que ce soit uniforme */
-    margin-bottom: 8px;
-}
-
-.gallery-item .year-badge {
-    display: none;
-}
-
-.gallery-description {
-    display: none;
-}
-
-.gallery-description {
-    font-size: 0.75rem;
-    /* Police plus petite pour ne pas prendre trop de place */
-    line-height: 1.2;
-    text-align: center;
-    /* Optionnel : centre le texte sous l'image */
-}
-
-/* 5. Réduction du titre de la section */
-.title-presentation {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.sidebar {
-    display: none;
-}
 /* --- MODAL STYLES --- */
 .modal {
     display: none;
