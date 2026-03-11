@@ -8,22 +8,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-projets.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 
 <body>
     <header>
-        <div class="retour">
-            <a href="index.html"><img src="arrow-left.svg" alt="Retour"></a>
+        <div class="arrow">
+            <a href="index.html">
+                <img src="arrow-left.svg">
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a data-key="nav-home" href="index.html">Accueil</a></li>
+                <li><a data-key="nav-home" href="index.html#home">Accueil</a></li>
                 <li><a data-key="nav-projects" href="index.html#projects">Projets</a></li>
                 <li><a data-key="nav-about" href="a-propos.html">À propos</a></li>
-                
+               
             </ul>
         </nav>
+        <button class="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
     <main>
         <section class="projets-hero">
@@ -286,6 +294,7 @@
             <p>Copyright © 2026 | Roxane OMNES</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

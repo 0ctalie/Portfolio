@@ -133,3 +133,74 @@ function filterProjects(category, clickedBtn) {
 
 
 document.addEventListener('DOMContentLoaded', updateUI);
+
+// Burger Menu Functionality
+const burgerBtn = document.querySelector('.burger-menu');
+const nav = document.querySelector('nav');
+
+if (burgerBtn) {
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('header')) {
+            burgerBtn.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    });
+}
+
+// --- Modal Gallery Functionality ---
+const modal = document.getElementById('projectModal');
+const closeModal = document.querySelector('.close-modal');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+if (modal && galleryItems.length > 0) {
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const imgSrc = item.querySelector('img').src;
+            const title = item.querySelector('.gallery-description').innerText;
+            const description = item.getAttribute('data-description');
+
+            document.getElementById('modalImageContainer').innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    const closeFunc = () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    };
+
+    if (closeModal) {
+        closeModal.addEventListener('click', closeFunc);
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeFunc();
+        }
+    });
+
+    // Handle Escape key
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeFunc();
+        }
+    });
+}

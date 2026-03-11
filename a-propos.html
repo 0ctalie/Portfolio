@@ -13,18 +13,24 @@
 
 <body>
     <header>
-        <div class="retour">
-            <a href="index.html"><img src="arrow-left.svg" alt="Retour"></a>
-        </div>
+        <div class="logo">
+            <strong>Rox</strong>
+            <div class="dot">.</div>
+            </div>
         <nav>
             <ul>
-                <li><a data-key="nav-home" href="index.html">Accueil</a></li>
+                <li><a data-key="nav-home" href="index.html#home">Accueil</a></li>
                 <li><a data-key="nav-projects" href="index.html#projects">Projets</a></li>
                 <li><a data-key="nav-about" href="a-propos.html">À propos</a></li>
+               
             </ul>
         </nav>
+        <button class="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
-
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-image">
@@ -109,40 +115,43 @@
             </div>
         </div>
         <div class="projects-gallery-grid">
-            <div class="gallery-item">
+            <div class="gallery-item" data-description="Je suis une grande fan de Fauve ≠, un collectif d'artistes que que j'admire depuis des années. 
+            Ce poster reprend les couleurs du groupes et leur style graphique poour mettre en avant un de leur EP.   ">
                 <div class="gallery-image-container">
                     <img src="images/poster-fauve1.png" alt="">
                 </div>
                 <span class="year-badge"> Janvier 2026</span>
-                <p class="gallery-description">Poster Fauve réalisé sur Photoshop </p>
+                <p class="gallery-description">Poster Fauve</p>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-description="Depuis longtemps, la photographie est un domaine qui m'inspire.
+            Ce bout de ma série floral montre un aspect de ma vision en tant que photographe : la nature, les jeux de lumières et les couleurs. ">
                 <div class="gallery-image-container">
                     <img src="images/photo-galerie.png" alt="">
                 </div>
                 <span class="year-badge"> Août 2025</span>
-                <p class="gallery-description">Photographies issues de ma série florale</p>
+                <p class="gallery-description">Photographies</p>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-description="Dans le but d'offrir des places de concert pour Aupinard, j'ai voulu marquer le coup en créant un design spécialement pour l'occasion !">
                 <div class="gallery-image-container">
-                    <img src="images/bratja.png" alt="">
+                    <img src="images/aupinard.png" alt="">
                 </div>
                 <span class="year-badge"> Août 2025</span>
-                <p class="gallery-description">Logo pour un groupe de musique </p>
+                <p class="gallery-description">Ticket de concert </p>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-description="Pour apprendre à utiliser Photoshop, j'ai commencé à créer des poster à partir de mes propres photos pour leur donner un aspect totalement différent en jouant sur les couleurs et la texture.">
                 <div class="gallery-image-container">
                     <img src="images/amst-poster.png" alt="">
                 </div>
                 <span class="year-badge"> Juillet 2025</span>
-                <p class="gallery-description">Poster graphique réalisé sur Photoshop à partir d’une de mes photos </p>
+                <p class="gallery-description">Poster graphique</p>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-description="Pour apprendre à utiliser Photoshop, j'ai réalisé ce poster à partir d'une de mes photos. 
+            J'ai utilisé des filtres, des courbes de couleur et du grain pour avoir ce résultat.">
                 <div class="gallery-image-container">
                     <img src="images/poster-fleur.png" alt="">
                 </div>
                 <span class="year-badge"> Juillet 2025</span>
-                <p class="gallery-description">Poster graphique réalisé sur Photoshop à partir d’une de mes photos </p>
+                <p class="gallery-description">Poster graphique</p>
             </div>
             
         </div>
@@ -193,4 +202,19 @@
             <p>Copyright © 2026 | Roxane OMNES</p>
         </div>
     </footer>
+    
+    <!-- Modal pour les projets personnels -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalImageContainer"></div>
+            <div id="modalTextContainer">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </body>
